@@ -60,11 +60,20 @@ function App() {
           status: 'success',
           processedUrl: result.resultUrl,
         });
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error('Processing error:', error);
+        let errorMessage = '处理失败，请检查API密钥或稍后重试';
+        if (error instanceof Error) {
+          errorMessage = error.message;
+        } else if (error && typeof error === 'object' && 'response' in error) {
+          const axiosError = error as { response?: { data?: { errors?: Array<{ title?: string }> } } };
+          if (axiosError.response?.data?.errors?.[0]?.title) {
+            errorMessage = axiosError.response.data.errors[0].title;
+          }
+        }
         updateCurrentImage({
           status: 'error',
-          error: error.response?.data?.errors?.[0]?.title || error.message || '处理失败，请检查API密钥或稍后重试',
+          error: errorMessage,
         });
       }
     },
