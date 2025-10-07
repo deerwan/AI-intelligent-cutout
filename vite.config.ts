@@ -10,6 +10,8 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
-  base: process.env.NODE_ENV === 'production' ? '/AI-intelligent-cutout/' : '/',
+  // Cloudflare Pages 使用根路径 '/'
+  // GitHub Pages 需要子路径时，设置环境变量 VITE_BASE_PATH
+  base: process.env.VITE_BASE_PATH || '/',
 })
 
