@@ -1,0 +1,34 @@
+# Development files
+.github/
+.vscode/
+docs/
+node_modules/
+src/
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Config files
+.eslintrc*
+.prettierrc*
+tsconfig*.json
+vite.config.ts
+tailwind.config.js
+postcss.config.js
+
+# Documentation
+*.md
+!README.md
+
+# Git files
+.git*
+
+# Environment files
+.env*
+
+# Build files (keep only dist)
+dist/
+
