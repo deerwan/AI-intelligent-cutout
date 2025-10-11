@@ -1,0 +1,34 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="magic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  
+  <!-- Magic wand handle -->
+  <rect x="45" y="67.5" width="11" height="45" rx="5.5" fill="white" opacity="0.9"/>
+  
+  <!-- Magic wand tip -->
+  <circle cx="50.5" cy="56.25" r="11.25" fill="url(#magic)"/>
+  
+  <!-- Sparkles -->
+  <g opacity="0.8">
+    <circle cx="78.75" cy="45" r="5.625" fill="white"/>
+    <circle cx="112.5" cy="67.5" r="4.5" fill="white"/>
+    <circle cx="101.25" cy="112.5" r="6.75" fill="white"/>
+    <circle cx="67.5" cy="123.75" r="3.375" fill="white"/>
+    <circle cx="135" cy="90" r="4.5" fill="white"/>
+    <circle cx="90" cy="135" r="3.375" fill="white"/>
+  </g>
+  
+  <!-- AI text -->
+  <text x="90" y="146.25" font-family="Arial, sans-serif" font-size="45" font-weight="bold" text-anchor="middle" fill="white" opacity="0.9">AI</text>
+</svg>

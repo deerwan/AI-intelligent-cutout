@@ -1,0 +1,31 @@
+{
+  "name": "AI智能抠图",
+  "short_name": "AI抠图",
+  "description": "使用AI技术快速移除图片背景，支持多种抠图模型API",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["productivity", "utilities", "photo"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}

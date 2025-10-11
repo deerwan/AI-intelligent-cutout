@@ -19,7 +19,7 @@ export interface ProviderInfo {
 // 图片数据接口
 export interface ImageData {
   id: string;
-  originalFile: File;
+  originalFile: File | null; // 支持URL模式，可能为null
   originalUrl: string;
   processedUrl?: string;
   status: ProcessingStatus;

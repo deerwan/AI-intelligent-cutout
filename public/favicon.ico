@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="magic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="url(#bg)"/>
+  
+  <!-- Magic wand handle -->
+  <rect x="8" y="12" width="2" height="8" rx="1" fill="white" opacity="0.9"/>
+  
+  <!-- Magic wand tip -->
+  <circle cx="9" cy="10" r="2" fill="url(#magic)"/>
+  
+  <!-- Sparkles -->
+  <g opacity="0.8">
+    <circle cx="14" cy="8" r="1" fill="white"/>
+    <circle cx="20" cy="12" r="0.8" fill="white"/>
+    <circle cx="18" cy="20" r="1.2" fill="white"/>
+    <circle cx="12" cy="22" r="0.6" fill="white"/>
+  </g>
+  
+  <!-- AI symbol -->
+  <text x="16" y="26" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="white" opacity="0.9">AI</text>
+</svg>
